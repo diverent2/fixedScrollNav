@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimplePlate</title>
+    <title>ScrollNav Demo</title>
     <script> //use polyfills only if needed
         var modernBrowser = (
         'assign' in Object
@@ -22,28 +22,32 @@
     
 </head>
 <body>
-    <header>
-        <svg width="60" height="60">
-            <use xlink:href="/img/spritesheet.svg#icon-arrow"></use>
-        </svg>
-        <h1>SimplePlate by Maximilian Becher</h1>
-    </header>
-    <div class="demoContainer js-list">
-        <div>
-            <p>(Kinda) supporting ms-grid</p>
-        </div>
-        <div>
-            <img src="./img/webpack-logo.gif" alt="webpack-logo">
-        </div>
-        <div>
-            <p> Supporting: </p>
-            <ul>
-                <li>Postcss with Sass</li>
-                <li>Babel</li>
-                <li>SVG spritesheet</li>
-            </ul>
-        </div>
+    <div class="scrollNav__container">
+        <div class="scrollNav__button scrollNav__button--previous"></div>
+        <div class="scrollNav__button scrollNav__button--next"></div>
     </div>
+
+    <main class="demoContainer">
+        <section data-scrollNav-section>
+            <h2>1</h2>
+        </section>
+        <section data-scrollNav-section>
+            <h2>2</h2>
+        </section>
+        <section data-scrollNav-section>
+            <h2>3</h2>
+        </section>
+        <section data-scrollNav-section>
+            <h2>4</h2>
+        </section>
+        <section data-scrollNav-section>
+            <h2>5</h2>
+        </section>
+        <section>
+            <h2 data-scrollNav-section>6</h2>
+        </section>
+    </main>
+
     <!-- imports from output folder -->
     <script src="index.bundle.js"></script>
 </body>
