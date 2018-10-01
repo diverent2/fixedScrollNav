@@ -2,7 +2,6 @@
 .demoContainer {
     
     section {
-        min-height: 1000px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -10,26 +9,32 @@
 
         &:nth-child(1) {
             background: darkred;
+            height: 1000px;
         }
     
         &:nth-child(2) {
             background: #345531;
+            height: 500px;
         }
     
         &:nth-child(3) {
             background: #533246;
+            height: 1300px;
         }
     
         &:nth-child(4) {
             background: #85A078;
+            height: 600px;
         }
     
         &:nth-child(5) {
             background: #5433d2;
+            height: 100vh;
         }
     
         &:nth-child(6) {
             background: #56faad;
+            height: 500px;
         }
     }
 }
