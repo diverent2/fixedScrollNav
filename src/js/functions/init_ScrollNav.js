@@ -49,3 +49,31 @@ function init__goToNextSection() {
 
 }
 
+function findPreviousSection() {
+    getCurrentSection();
+    let activeSection = document.querySelector("[data-scrollNav-section='active']");
+
+    if (activeSection) {
+
+        let previousSection = activeSection.previousElementSibling;
+        if (previousSection) {
+            previousSection.scrollIntoView();
+        }
+
+    }
+}
+
+function findNextSection() {
+    getCurrentSection();
+    let activeSection = document.querySelector("[data-scrollNav-section='active']");
+
+    if (activeSection) {
+        
+        let nextSection = activeSection.nextElementSibling;
+
+        if (nextSection) {
+            nextSection.scrollIntoView();
+        }
+
+    }
+}
