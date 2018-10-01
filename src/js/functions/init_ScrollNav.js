@@ -10,7 +10,7 @@ function getCurrentSection() {
 
     let sections = document.querySelectorAll("[data-scrollNav-section]");
 
-    const result = [...sections].filter(function(section) {
+    const result = [...sections].filter( section => {
 
         let sectionTop = section.getBoundingClientRect().top;
         let sectionHeight = section.getBoundingClientRect().height;
@@ -20,7 +20,6 @@ function getCurrentSection() {
             ) {
             return true;
         }
-        return false;
     } );
 
     return result[0];
