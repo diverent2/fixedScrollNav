@@ -32,6 +32,8 @@ function getCurrentSection() {
 function init__goToPreviousSection() {
 
     const scrollPreviousButton = document.querySelector('.scrollNav__button--previous');
+    scrollPreviousButton.tabIndex = "0";
+    scrollPreviousButton.setAttribute("role","button");
 
     scrollPreviousButton.addEventListener("click", function() {
         findPreviousSection();
@@ -42,9 +44,11 @@ function init__goToPreviousSection() {
 
 function init__goToNextSection() {
 
-    const scrollPreviousButton = document.querySelector('.scrollNav__button--next');
+    const scrollNextButton = document.querySelector('.scrollNav__button--next');
+    scrollNextButton.tabIndex = "0";
+    scrollNextButton.setAttribute("role","button");
 
-    scrollPreviousButton.addEventListener("click", function() {
+    scrollNextButton.addEventListener("click", function() {
         findNextSection();
     })
 
