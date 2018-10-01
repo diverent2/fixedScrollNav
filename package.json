@@ -36,6 +36,7 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }
