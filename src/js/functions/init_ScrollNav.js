@@ -10,21 +10,20 @@ function getCurrentSection() {
 
     let sections = document.querySelectorAll("[data-scrollNav-section]");
 
-    [...sections].forEach(e => {
-        let sectionTop = e.getBoundingClientRect().top;
-        let sectionHeight = e.getBoundingClientRect().height;
+    const result = [...sections].filter(function(section) {
 
-        e.setAttribute('data-scrollNav-section', '');
-
-        if(
-            (sectionTop <= 0) && //---> within screen (top)
-            (sectionTop > -Math.abs(sectionHeight) ) //---> within screen (bottom)
-        ) {
-            e.setAttribute('data-scrollNav-section', 'active');
-            return e;
+        let sectionTop = section.getBoundingClientRect().top;
+        let sectionHeight = section.getBoundingClientRect().height;
+        
+        if ( (sectionTop <= 0) &&  //---> within screen (top)
+             (sectionTop > -Math.abs(sectionHeight))  //---> within screen (bottom)
+            ) {
+            return true;
         }
+        return false;
+    } );
 
-    });
+    return result[0];
 
 }
 
@@ -50,8 +49,7 @@ function init__goToNextSection() {
 }
 
 function findPreviousSection() {
-    getCurrentSection();
-    let activeSection = document.querySelector("[data-scrollNav-section='active']");
+    let activeSection = getCurrentSection();
 
     if (activeSection) {
 
@@ -64,13 +62,11 @@ function findPreviousSection() {
 }
 
 function findNextSection() {
-    getCurrentSection();
-    let activeSection = document.querySelector("[data-scrollNav-section='active']");
+    let activeSection = getCurrentSection();
 
     if (activeSection) {
         
         let nextSection = activeSection.nextElementSibling;
-
         if (nextSection) {
             nextSection.scrollIntoView();
         }
