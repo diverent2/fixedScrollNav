@@ -1,7 +1,10 @@
+import smoothscroll from 'smoothscroll-polyfill';
 
 main();
 
 function main() {
+    smoothscroll.polyfill();
+
     init__goToPreviousSection();
     init__goToNextSection();
 }
