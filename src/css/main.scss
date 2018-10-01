@@ -20,6 +20,7 @@ parts.
 eg. button, link, list, table, accordion;
 basically everything that COULD be described by a simple html tag.
 ---------------------------------------------------------*/
+@import './bits/scrollNav';
 //@import './bits/button';
 //@import './bits/link';
 //@import './bits/nav';
@@ -37,7 +38,7 @@ eg. teaser-card, slider, breadcrumbs, menu, tabs
 = an arrangement of components that form an self-contained module
 eg. header, footer, section, widget
 ---------------------------------------------------------*/
-@import './modules/header';
+//@import './modules/header';
 //@import './modules/footer';
 
 
