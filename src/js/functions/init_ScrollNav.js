@@ -57,7 +57,10 @@ function findPreviousSection() {
 
         let previousSection = activeSection.previousElementSibling;
         if (previousSection) {
-            previousSection.scrollIntoView();
+            previousSection.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
         }
 
     }
@@ -70,7 +73,10 @@ function findNextSection() {
         
         let nextSection = activeSection.nextElementSibling;
         if (nextSection) {
-            nextSection.scrollIntoView();
+            nextSection.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
         }
 
     }
