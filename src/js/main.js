@@ -1,3 +1,3 @@
 
 /* Import functions*/
-import './functions/demo';
+import './functions/init_ScrollNav';
