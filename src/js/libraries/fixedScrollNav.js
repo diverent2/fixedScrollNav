@@ -75,7 +75,7 @@ function findNextSection() {
     let activeSection = getCurrentSection();
 
     if (activeSection) {
-        
+
         let nextSection = activeSection.nextElementSibling;
         if (nextSection) {
             nextSection.scrollIntoView({
@@ -91,7 +91,7 @@ function getCurrentSection_index() {
 
     let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
     
-    let activeSection = [...sections].findIndex( section => {
+    let activeSection_index = [...sections].findIndex( section => {
 
         let sectionTop = section.getBoundingClientRect().top;
         let sectionHeight = section.getBoundingClientRect().height;
@@ -101,10 +101,11 @@ function getCurrentSection_index() {
             ) {
             return true;
         }
+        return false;
     });
-    
-    console.log(activeSection);
 
+    return activeSection_index;
+    
 }
 
 module.exports.init = init;
