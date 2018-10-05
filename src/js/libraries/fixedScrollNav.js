@@ -86,3 +86,5 @@ function findNextSection() {
 
     }
 }
+
+module.exports.init = init;
