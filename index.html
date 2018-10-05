@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScrollNav Demo</title>
+    <title>fixedScrollNav Demo</title>
     <script> //use polyfills only if needed
         var modernBrowser = (
         'assign' in Object
@@ -22,29 +22,30 @@
     
 </head>
 <body>
-    <div class="scrollNav__container">
-        <div class="scrollNav__button scrollNav__button--previous" title="go to previous section"></div>
-        <div class="scrollNav__button scrollNav__button--next" title="go to next section"></div>
+    <div class="fixedScrollNav__container">
+        <div class="fixedScrollNav__button fixedScrollNav__button--previous" title="go to previous section"></div>
+        <div class="fixedScrollNav__button fixedScrollNav__button--next" title="go to next section"></div>
     </div>
+    
 
     <main class="demoContainer">
-        <section data-scrollNav-section>
+        <section data-fixedScrollNav-section>
             <h2>1</h2>
         </section>
-        <section data-scrollNav-section>
+        <section data-fixedScrollNav-section>
             <h2>2</h2>
         </section>
-        <section data-scrollNav-section>
+        <section data-fixedScrollNav-section>
             <h2>3</h2>
         </section>
-        <section data-scrollNav-section>
+        <section data-fixedScrollNav-section>
             <h2>4</h2>
         </section>
-        <section data-scrollNav-section>
+        <section data-fixedScrollNav-section>
             <h2>5</h2>
         </section>
         <section>
-            <h2 data-scrollNav-section>6</h2>
+            <h2 data-fixedScrollNav-section>6</h2>
         </section>
     </main>
 

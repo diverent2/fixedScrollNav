@@ -11,7 +11,7 @@ function main() {
 
 function getCurrentSection() {
 
-    let sections = document.querySelectorAll("[data-scrollNav-section]");
+    let sections = document.querySelectorAll("[data-fixedscrollNav-section]");
 
     const result = [...sections].filter( section => {
 
@@ -31,7 +31,7 @@ function getCurrentSection() {
 
 function init__goToPreviousSection() {
 
-    const scrollPreviousButton = document.querySelector('.scrollNav__button--previous');
+    const scrollPreviousButton = document.querySelector('.fixedscrollNav__button--previous');
     scrollPreviousButton.tabIndex = "0";
     scrollPreviousButton.setAttribute("role","button");
 
@@ -44,7 +44,7 @@ function init__goToPreviousSection() {
 
 function init__goToNextSection() {
 
-    const scrollNextButton = document.querySelector('.scrollNav__button--next');
+    const scrollNextButton = document.querySelector('.fixedscrollNav__button--next');
     scrollNextButton.tabIndex = "0";
     scrollNextButton.setAttribute("role","button");
 
