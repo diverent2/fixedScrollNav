@@ -37,7 +37,7 @@ function init__goToPreviousSection() {
     scrollPreviousButton.setAttribute("role","button");
 
     scrollPreviousButton.addEventListener("click", function() {
-        findPreviousSection();
+        scrollToPreviousSection();
     })
 
 }
@@ -50,28 +50,44 @@ function init__goToNextSection() {
     scrollNextButton.setAttribute("role","button");
 
     scrollNextButton.addEventListener("click", function() {
-        getNextSection();
+        scrollToNextSection();
     })
 
 }
 
-function findPreviousSection() {
-    let activeSection = getCurrentSection();
+function scrollToPreviousSection() {
 
-    if (activeSection) {
+    let activeSection_index = getCurrentSection_index();
+    if (activeSection_index !== -1) {
 
-        let previousSection = activeSection.previousElementSibling;
+        let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
+        sections = [...sections];
+
+        let activeSection = sections[activeSection_index];
+        let activeSectionTop = activeSection.getBoundingClientRect().top;
+        if (activeSectionTop < -1) {
+
+            activeSection.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+        }
+
+        else {
+
+            let previousSection = sections[activeSection_index -1];
         if (previousSection) {
             previousSection.scrollIntoView({
                 block: 'start',
                 behavior: 'smooth'
             });
         }
+        }
 
     }
 }
 
-function getNextSection() {
+function scrollToNextSection() {
 
     let activeSection_index = getCurrentSection_index();
     if (activeSection_index !== -1) {
