@@ -14,7 +14,7 @@ function getCurrentSection() {
 
     let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
 
-    const result = [...sections].filter( section => {
+    const activeSection = [...sections].filter( section => {
 
         let sectionTop = section.getBoundingClientRect().top;
         let sectionHeight = section.getBoundingClientRect().height;
@@ -24,9 +24,9 @@ function getCurrentSection() {
             ) {
             return true;
         }
-    } );
+    });
 
-    return result[0];
+    return activeSection[0];
 
 }
 
@@ -85,6 +85,26 @@ function findNextSection() {
         }
 
     }
+}
+
+function getCurrentSection_index() {
+
+    let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
+    
+    let activeSection = [...sections].findIndex( section => {
+
+        let sectionTop = section.getBoundingClientRect().top;
+        let sectionHeight = section.getBoundingClientRect().height;
+        
+        if ( (sectionTop <= 0) &&  //---> within screen (top)
+             (sectionTop > -Math.abs(sectionHeight))  //---> within screen (bottom)
+            ) {
+            return true;
+        }
+    });
+    
+    console.log(activeSection);
+
 }
 
 module.exports.init = init;
