@@ -50,7 +50,7 @@ function init__goToNextSection() {
     scrollNextButton.setAttribute("role","button");
 
     scrollNextButton.addEventListener("click", function() {
-        findNextSection();
+        getNextSection();
     })
 
 }
@@ -71,19 +71,21 @@ function findPreviousSection() {
     }
 }
 
-function findNextSection() {
-    let activeSection = getCurrentSection();
+function getNextSection() {
 
-    if (activeSection) {
+    let activeSection_index = getCurrentSection_index();
+    if (activeSection_index !== -1) {
 
-        let nextSection = activeSection.nextElementSibling;
+        let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
+        sections = [...sections];
+        
+        let nextSection = sections[activeSection_index +1];
         if (nextSection) {
             nextSection.scrollIntoView({
                 block: 'start',
                 behavior: 'smooth'
             });
         }
-
     }
 }
 
