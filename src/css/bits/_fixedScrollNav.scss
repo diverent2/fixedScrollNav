@@ -1,22 +1,22 @@
-.fixedscrollNav__container {
+.fixedScrollNav__container {
     position: fixed;
     top: 0; right: 8px;
     margin: 16px;
     z-index: 1000;
 
-    .fixedscrollNav__button {
+    .fixedScrollNav__button {
         margin: 8px;
         cursor: pointer;
     }
 
-    .fixedscrollNav__button--previous {
+    .fixedScrollNav__button--previous {
         width: 0; height: 0;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-bottom: 35px solid lightblue;
     }
 
-    .fixedscrollNav__button--next {
+    .fixedScrollNav__button--next {
         width: 0;
         height: 0;
         border-left: 20px solid transparent;

@@ -3,7 +3,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 function init() {
     smoothscroll.polyfill();
 
-    let isUsed = document.querySelector('.fixedscrollNav__container');
+    let isUsed = document.querySelector('.fixedScrollNav__container');
     if (isUsed) {
         init__goToPreviousSection();
         init__goToNextSection();
@@ -12,7 +12,7 @@ function init() {
 
 function getCurrentSection() {
 
-    let sections = document.querySelectorAll("[data-fixedscrollNav-section]");
+    let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
 
     const result = [...sections].filter( section => {
 
@@ -32,7 +32,7 @@ function getCurrentSection() {
 
 function init__goToPreviousSection() {
 
-    const scrollPreviousButton = document.querySelector('.fixedscrollNav__button--previous');
+    const scrollPreviousButton = document.querySelector('.fixedScrollNav__button--previous');
     scrollPreviousButton.tabIndex = "0";
     scrollPreviousButton.setAttribute("role","button");
 
@@ -45,7 +45,7 @@ function init__goToPreviousSection() {
 
 function init__goToNextSection() {
 
-    const scrollNextButton = document.querySelector('.fixedscrollNav__button--next');
+    const scrollNextButton = document.querySelector('.fixedScrollNav__button--next');
     scrollNextButton.tabIndex = "0";
     scrollNextButton.setAttribute("role","button");
 

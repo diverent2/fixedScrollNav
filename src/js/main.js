@@ -1,3 +1,3 @@
 
-/* Import libraties */
-import './libraries/fixedScrollNav';
+/* Initialize functions */
+import './init/init_fixedScrollNav';
