@@ -1,7 +1,7 @@
 {
-  "name": "simpleplate",
+  "name": "fixedScrollNav",
   "version": "1.0.0",
-  "description": "Boilerplate for simple web projects",
+  "description": "fixedScrollNav to navigate between sections",
   "main": "index.js",
   "scripts": {
     "start": "webpack-serve ./webpack.config.js",
