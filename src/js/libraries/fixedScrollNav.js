@@ -3,8 +3,11 @@ import smoothscroll from 'smoothscroll-polyfill';
 function init() {
     smoothscroll.polyfill();
 
-    init__goToPreviousSection();
-    init__goToNextSection();
+    let isUsed = document.querySelector('.fixedscrollNav__container');
+    if (isUsed) {
+        init__goToPreviousSection();
+        init__goToNextSection();
+    }
 }
 
 function getCurrentSection() {
