@@ -98,6 +98,7 @@ function getCurrentSection_index() {
     let activeSection_index = [...sections].findIndex( section => {
 
         let sectionTop = section.getBoundingClientRect().top;
+        sectionTop = sectionTop -1; //remove one pixel from detection range to ensure the correct section gets chosen
         let sectionHeight = section.getBoundingClientRect().height;
         
         if ( (sectionTop <= 0) &&  //---> within screen (top)
@@ -107,7 +108,6 @@ function getCurrentSection_index() {
         }
         return false;
     });
-
     return activeSection_index;
     
 }
