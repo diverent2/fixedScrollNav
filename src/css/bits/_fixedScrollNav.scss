@@ -21,6 +21,9 @@
             transform: scale(1.1);
         }
 
+        &.hide {
+            opacity: 0;
+        }
     }
 
     .fixedScrollNav__button--previous {
