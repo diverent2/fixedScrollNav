@@ -3,10 +3,16 @@ import smoothscroll from 'smoothscroll-polyfill';
 function init() {
     smoothscroll.polyfill(); //init polyfill
 
+    //check if fixedScrollNav is needed in first place
     let isUsed = document.querySelector('.fixedScrollNav__container');
     if (isUsed) {
+
+        detectScroll();
+
         init__goToPreviousSection();
         init__goToNextSection();
+
+        toggleButtons();
     }
 }
 
@@ -25,6 +31,14 @@ function init__goToPreviousSection() {
     })
 
 }
+
+/** 
+ * add eventlisten for scrolling (manually or automatically) to toggleButtons()
+**/
+function detectScroll() { //add eventlisten
+    document.addEventListener("scroll", toggleButtons);
+}
+
 
 /** 
  * check if first or last section are in focus and toggle buttons accordingly
