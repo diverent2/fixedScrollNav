@@ -26,6 +26,37 @@ function init__goToPreviousSection() {
 
 }
 
+/** 
+ * check if first or last section are in focus and toggle buttons accordingly
+**/
+function toggleButtons() {
+
+    let activeSection_index = getCurrentSection_index();
+    const scrollPreviousButton = document.querySelector('.fixedScrollNav__button--previous');
+    const scrollNextButton = document.querySelector('.fixedScrollNav__button--next');
+
+    let sections = document.querySelectorAll("[data-fixedScrollNav-section]");
+    sections = [...sections];
+    
+    // scrollPreviousButton
+    if (activeSection_index == 0) {
+        scrollPreviousButton.classList.add('hide')
+    }
+    else {
+        scrollPreviousButton.classList.remove('hide');
+    }
+
+    // scrollNextButton
+    let amountOfSections = sections.length - 1;
+    if (activeSection_index == amountOfSections ) {
+        scrollNextButton.classList.add('hide');
+    }
+    else {
+        scrollNextButton.classList.remove('hide');
+    }
+
+}
+
 /** init button .fixedScrollNav__button--next
  * ---------------------------------------------
  * add eventlistener [ will run scrollToNextSection() ]
