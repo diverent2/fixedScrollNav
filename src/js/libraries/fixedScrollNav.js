@@ -62,7 +62,10 @@ function toggleButtons() {
 
     // scrollNextButton
     let amountOfSections = sections.length - 1;
-    if (activeSection_index == amountOfSections ) {
+    if (
+        activeSection_index == amountOfSections || //last section is active
+        (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight //document is at the bottom
+    ) {
         scrollNextButton.classList.add('hide');
     }
     else {
