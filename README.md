@@ -1,77 +1,51 @@
-# ⛳ SimplePlate
-## Boilerplate for simple web projects
-
- <strong>everything you need </strong> to build a well-structured project, while <strong>writing better code using the newest technologies. </strong> 
+# ↕️ fixedScrollNav
+fixed scroll navigation that allows users to navigate between sections with simple and intuitive arrow buttons.
 Oh and it will work in all browsers 😉💻
-(Chrome, Safari, Edge, Firefox and(!) IE11)
+(Chrome, Safari, Edge, Firefox and IE11)
 
-### ✨ Feature List:
 
-* webpack <br>
-* postcss
-	* CSS Grid support  via [Autoprefixer](https://github.com/postcss/autoprefixer)
-	* [csstools/normalize.css](https://github.com/csstools/normalize.css)
-* babel <br>
-* webpack-serve dev-server <br>
-* svg spritesheet <br>
-* linting <br>
+## 🏗️ Setup (project based on [SimplePlate](https://github.com/MaximilianUE/SimplePlate) )
 
-### 🏗️ Setup:
+using yarn (recommended)  
+`yarn add fixedScrollNav`
 
-`git clone https://github.com/MaximilianUE/SimplePlate.git`
+using npm  
+`npm install fixedScrollNav`
 
-`yarn`
 
-### 🏃 Ret-2-go Development with Webpack Serve
+## 👩‍💻 usage
 
-`yarn start`
-
-for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
-
-### 🚚 Production
-
-`yarn build`
-
-### 👩‍💻 usage
-
-#### svg-icons (spritesheet)
-
-To use svg icons refer to their filename via icon-[name]
-
-ex. 
-
-> img/icons/[name].svg
+### HTML
+use `data-fixedScrollNav-section` to indicate which sections to scroll to.
 
 ```html
-<svg width="60" height="60">
-	<use xlink:href="/img/spritesheet.svg#icon-[name]"></use>
-</svg>
+<section data-fixedScrollNav-section>
+	[...]
+</section>
+<section data-fixedScrollNav-section>
+	[...]
+</section>
 ```
 
-#### media queries 4.0
+add the fixed navigation to your document (best at top/end)
+```html
+<div class="fixedScrollNav__container">
+	<div class="fixedScrollNav__button fixedScrollNav__button--previous" title="go to previous section"></div>
+	<div class="fixedScrollNav__button fixedScrollNav__button--next" title="go to next section"></div>
+</div>
+```
 
-ex.
+### JS
+```js
+import fixedScrollNav from 'fixedScrollNav';
 
+fixedScrollNav.init(); //Initialize fixedScrollNav
+```
+
+### CSS
 ```css
-@media (--large) {
-    color: red;
-}
+@import '~fixedScrollNav/src/styles';
 ```
 
-Default vars: `--large, --medium, —small` > `.src/css/base/_breakpoints.scss`
-
-see also [postcss-preset-env documentation](https://preset-env.cssdb.org/features#media-query-ranges)
-
-
-### ⚙️ Simple Customisation
-
-#### Global 🌐
-* devserver settings > `.serverc.json`
-* project structure settings > `webpack.config.js`
-* support these browser versions > `browserslistrc`
-
-#### CSS 🎨
-* postcss addons > `.postcss.config.js`
-* stylelint settings > `.stylelintrc`
 
 made with ♥️ by [Diverent2](https://twitter.com/diverent2)
