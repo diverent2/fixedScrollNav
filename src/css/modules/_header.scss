@@ -1,10 +1,5 @@
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (--medium) {
-        color: red;
-      }
+    position: fixed;
+    margin: 20px;
 }
