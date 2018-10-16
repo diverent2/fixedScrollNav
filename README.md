@@ -19,6 +19,20 @@ using yarn (recommended)
 using npm  
 `npm install fixedScrollNav`
 
+### Development
+
+clone this repository `git clone https://github.com/MaximilianUE/fixedScrollNav.git`
+
+`cd fixedScrollNav`
+
+install modules  
+`yarn` using yarn (recommanded)  
+`npm install` using npm
+
+`yarn start` using yarn
+`npm start` using npm
+
+for reference see [SimplePlate](https://github.com/MaximilianUE/SimplePlate)
 
 ## 👩‍💻 usage
 
