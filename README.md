@@ -1,5 +1,5 @@
 # ↕️ fixedScrollNav
-fixed scroll navigation that allows users to navigate between sections with simple and intuitive arrow buttons.
+A vanilla fixed scroll navigation that allows users to navigate between sections with simple and intuitive arrow buttons.
 Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11)
 
@@ -56,17 +56,19 @@ add the fixed navigation to your document (best at top/end)
 </div>
 ```
 
-### JS
+### JS (ES6 Module)
+
 ```js
-import fixedScrollNav from 'fixedScrollNav';
+import fixedScrollNav from '~fixedScrollNav';
 
 fixedScrollNav.init(); //Initialize fixedScrollNav
 ```
 
-### CSS
+### Styles
 ```css
-@import '~fixedScrollNav/src/styles';
+@import '~fixedScrollNav/css/fixedScrollNav.css';
+or
+@import '~fixedScrollNav/css/fixedScrollNav.min.css';
 ```
-
 
 made with ♥️ by [Diverent2](https://twitter.com/diverent2)
