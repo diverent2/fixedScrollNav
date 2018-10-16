@@ -21,7 +21,7 @@ const imgEntry = './src/img';
 const iconsEntry = './src/img/icons/';
 const fontsEntry = './src/fonts';
 
-const outputFolder = './dist/';
+const outputFolder = './docs/';
 const imageOutput = './img/';
 
 /* -------------------------------------- */
@@ -72,6 +72,6 @@ module.exports = (env) => ({
       svg4everybody: true,
     }),
     new FilterPlugin({ files: ['main.bundle.js', 'main.bundle.js.map'] }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['docs']),
   ]
 })
