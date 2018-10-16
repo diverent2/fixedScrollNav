@@ -61,9 +61,9 @@ module.exports = (env) => ({
       filename: "[name].css"
     }),
     new CopyWebpackPlugin([
-      { from: imgEntry, to: 'img' },
+     // { from: imgEntry, to: 'img' },
       { from: htmlEntry },
-      { from: fontsEntry, to: 'fonts' },
+     // { from: fontsEntry, to: 'fonts' },
     ]),
     new SVGSpritemapPlugin({
       src: iconsEntry + '*.svg',
