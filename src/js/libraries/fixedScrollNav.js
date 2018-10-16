@@ -29,6 +29,11 @@ function init__goToPreviousSection() {
     scrollPreviousButton.addEventListener("click", function() {
         scrollToPreviousSection();
     })
+    scrollPreviousButton.addEventListener('keypress', e => {
+        if (e.key === 'Enter') {
+            scrollToPreviousSection();
+        }
+    })
 
 }
 
@@ -87,6 +92,11 @@ function init__goToNextSection() {
 
     scrollNextButton.addEventListener("click", function() {
         scrollToNextSection();
+    })
+    scrollNextButton.addEventListener('keypress', e => {
+        if (e.key === 'Enter') {
+            scrollToNextSection();
+        }
     })
 
 }
