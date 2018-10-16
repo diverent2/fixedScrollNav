@@ -4,7 +4,14 @@ Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11)
 
 
-## 🏗️ Setup (project based on [SimplePlate](https://github.com/MaximilianUE/SimplePlate) )
+## ✨ Feature List:
+* Vanilla ES6 Solution
+* simple and intuitive
+* flexable (can be used everywhere)
+* smooth scrolling automatically gets polyfilled **only if needed**
+* can be controled via keyboard (A11y ready)
+
+## 🏗️ Setup
 
 using yarn (recommended)  
 `yarn add fixedScrollNav`
