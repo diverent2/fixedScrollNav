@@ -3,3 +3,4 @@
 
 # except the lib folder
 !lib/**/*
+!README.md
