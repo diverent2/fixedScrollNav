@@ -7,9 +7,13 @@
     "start": "webpack-serve ./webpack.config.js",
     "build": "webpack -p --mode production"
   },
-  "homepage": "https://maximilianue.github.io/fixedScrollNav/",
   "author": "Maximilian Becher",
+  "homepage": "https://maximilianue.github.io/fixedScrollNav/",
   "repository": "github:MaximilianUE/fixedScrollNav",
+  "bugs": {
+    "url": "https://github.com/MaximilianUE/fixedScrollNav/issues",
+    "email": "diverent2@gmail.de"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.6.2",
