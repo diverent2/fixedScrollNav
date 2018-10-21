@@ -1,11 +1,13 @@
 # ↕️ fixedScrollNav
+
 ES6 fixed scroll navigation that allows users to navigate between sections with simple and intuitive arrow buttons.
 Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11)
 
 [Demo](https://maximilianue.github.io/fixedScrollNav/)
 
-## ✨ Feature List:
+## ✨ Feature List
+
 * Vanilla ES6
 * simple and intuitive usage
 * flexable (can be used everywhere)
@@ -20,18 +22,18 @@ Manager | Command
 yarn (recommended) | `yarn add fixedScrollNav`
 npm | `npm install fixedScrollNav`
 
-### Development
+### Module Development (Contribution)
 
 clone this repository `git clone https://github.com/MaximilianUE/fixedScrollNav.git`
 
 `cd ./fixedScrollNav`
 
-#### install modules 
+#### install modules
 
 Manager | Command
 --- | ---
 yarn | `yarn`
-npm | `npm install `
+npm | `npm install`
 
 #### start
 
@@ -46,49 +48,50 @@ for further reference see [SimplePlate](https://github.com/MaximilianUE/SimplePl
 ## 👩‍💻 usage
 
 ### HTML / Markup
+
 use `data-fixedScrollNav-section` to indicate which sections to scroll to.
 
 ```html
 <section data-fixedScrollNav-section>
-	[...]
+ [...]
 </section>
 <section data-fixedScrollNav-section>
-	[...]
+ [...]
 </section>
 ```
 
 add the fixed navigation to your document (best at top/end)
+
 ```html
 <div class="fixedScrollNav__container">
-	<div class="fixedScrollNav__button fixedScrollNav__button--previous" title="go to previous section"></div>
-	<div class="fixedScrollNav__button fixedScrollNav__button--next" title="go to next section"></div>
+ <div class="fixedScrollNav__button fixedScrollNav__button--previous" title="go to previous section"></div>
+ <div class="fixedScrollNav__button fixedScrollNav__button--next" title="go to next section"></div>
 </div>
 ```
 
 ### JS (ES6 Module)
 
-#### Import 
-`import fixedScrollNav from '~fixedScrollNav';
-`
-or 
-`import fixedScrollNav from '~fixedScrollNav.min';
-`
-#### Initialize   
+#### Import
+
+`import fixedScrollNav from '~fixedScrollNav';`  
+or  
+`import fixedScrollNav from '~fixedScrollNav.min';`
+
+#### Initialize
+
 `fixedScrollNav.init();`  
 (This will first test if the markup even exist otherways it won´t do anything)  
 
 ### Styles
 
-#### Import 
-`
-@import '~fixedScrollNav/css/fixedScrollNav.css';
-`
-or
-`
-@import '~fixedScrollNav/css/fixedScrollNav.min.css';
-`
+#### Import
+
+`@import '~fixedScrollNav/css/fixedScrollNav.css';`  
+or  
+`@import '~fixedScrollNav/css/fixedScrollNav.min.css';`
 
 #### Classes
+
 used classes  
 feel free to adjust to your needs
 
@@ -97,15 +100,14 @@ feel free to adjust to your needs
 //declares the fixed position
 .fixedScrollNav__container 
 
-	//button classes
-	.fixedScrollNav__button
-	
-	 	//arrow up
-		.fixedScrollNav__button--previous
-		
-		 //arronw down
-		.fixedScrollNav__button--next
-```
+ //button classes
+ .fixedScrollNav__button
 
+  //arrow up
+  .fixedScrollNav__button--previous
+
+  //arrow down
+  .fixedScrollNav__button--next
+```
 
 made with ♥️ by [Diverent2](https://twitter.com/diverent2)
