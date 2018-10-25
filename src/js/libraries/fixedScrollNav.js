@@ -1,18 +1,21 @@
 import smoothscroll from 'smoothscroll-polyfill';
 
-function init() {
-    smoothscroll.polyfill(); //init polyfill
+const fixedScrollNav = {
 
-    //check if fixedScrollNav is needed in first place
-    let isUsed = document.querySelector('.fixedScrollNav__container');
-    if (isUsed) {
+    init:function() {
+        smoothscroll.polyfill(); //init polyfill
 
-        detectScroll();
+        //check if fixedScrollNav is needed in first place
+        let isUsed = document.querySelector('.fixedScrollNav__container');
+        if (isUsed) {
 
-        init__goToPreviousSection();
-        init__goToNextSection();
+            detectScroll();
 
-        toggleButtons();
+            init__goToPreviousSection();
+            init__goToNextSection();
+
+            toggleButtons();
+        }
     }
 }
 
@@ -115,7 +118,7 @@ function getCurrentSection_index() {
         let sectionHeight = section.getBoundingClientRect().height;
         
         if ( (sectionTop <= 0) &&  //---> within screen (top)
-             (sectionTop > -Math.abs(sectionHeight))  //---> within screen (bottom)
+            (sectionTop > -Math.abs(sectionHeight))  //---> within screen (bottom)
             ) {
             return true;
         }
@@ -178,6 +181,5 @@ function scrollToNextSection() {
     }
 }
 
-
 //export module
-module.exports.init = init;
+export default fixedScrollNav;
