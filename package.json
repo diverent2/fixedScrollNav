@@ -29,10 +29,6 @@
     "scroll",
     "fixed"
   ],
-  "engines": {
-    "node": ">= 10",
-    "yarn": ">= 1.10"
-  },
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.6.2",
