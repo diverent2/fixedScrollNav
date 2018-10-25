@@ -86,9 +86,9 @@ or
 
 #### Import
 
-`@import '~fixedScrollNav/css/fixedScrollNav.css';`  
+`@import '~/fixedScrollNav/lib/css/fixedScrollNav';`  
 or  
-`@import '~fixedScrollNav/css/fixedScrollNav.min.css';`
+`@import '~fixedScrollNav/lib/css/fixedScrollNav.min';`
 
 #### Classes
 
