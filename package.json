@@ -4,16 +4,20 @@
   "description": "A fixed scroll navigation to jump between sections",
   "main": "js/fixedScrollNav.min.js",
   "scripts": {
-    "build-lib-js-min": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.min.js",
-    "build-lib-css-min": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.min.css",
-    "build-lib-js": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.js --no-minify",
-    "build-lib-css": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.css --no-minify",
+    "build-module": "yarn build-module-unminified && yarn build-module-min",
+      "build-module-unminified": "yarn build-module-js-unminified && yarn build-module-css-unminified",
+        "build-module-js-unminified": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.js --no-minify",
+        "build-module-css-unminified": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.css --no-minify",
+      "build-module-min": "yarn build-module-js-min && yarn build-module-css-min",
+        "build-module-js-min": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.min.js",
+        "build-module-css-min": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.min.css",
+        
     "build-global-min": "yarn build-lib-js-min && yarn build-lib-css-min",
     "build-global": "yarn build-lib-js && yarn build-lib-css",
     "build-demo": "parcel build index.html -d docs --no-source-maps",
     "start": "parcel index.html",
     "start-wp": "webpack-serve ./webpack.config.js",
-    "build": "webpack -p --mode production -d /docs"
+    "build-wp": "webpack -p --mode production -d /docs"
   },
   "author": {
     "name": "Maximilian Becher",
