@@ -181,5 +181,7 @@ function scrollToNextSection() {
     }
 }
 
+window.fixedScrollNav = fixedScrollNav;
+
 //export module
 export default fixedScrollNav;
