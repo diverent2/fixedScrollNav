@@ -5,7 +5,7 @@
   margin: 16px;
   z-index: 1000;
   opacity: 0.7;
-  transition: all 0.3s;
+  transition: all 0.3s; 
 }
 
 .fixedScrollNav__container:hover, 
@@ -19,25 +19,26 @@
   cursor: pointer;
   opacity: 1;
   transition: all 0.2s;
-  outline: none;
+  outline: none; 
 }
 
-.fixedScrollNav__container .fixedScrollNav__button:hover, 
-.fixedScrollNav__container .fixedScrollNav__button:active, 
-.fixedScrollNav__container .fixedScrollNav__button:focus {
-  transform: scale(1.1);
-}
+  .fixedScrollNav__container .fixedScrollNav__button:hover, 
+  .fixedScrollNav__container .fixedScrollNav__button:active, 
+  .fixedScrollNav__container .fixedScrollNav__button:focus {
+    transform: scale(1.1); 
+  }
 
-.fixedScrollNav__container .fixedScrollNav__button.hide {
-  opacity: 0;
-  pointer-events: none;
-}
+  .fixedScrollNav__container .fixedScrollNav__button.hide {
+    opacity: 0;
+    pointer-events: none; 
+  }
+
 .fixedScrollNav__container .fixedScrollNav__button--previous {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 35px solid lightblue;
+  border-bottom: 35px solid lightblue; 
 }
 
 .fixedScrollNav__container .fixedScrollNav__button--next {
@@ -45,5 +46,5 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 35px solid lightblue;
+  border-top: 35px solid lightblue; 
 }
