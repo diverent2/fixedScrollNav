@@ -2,7 +2,7 @@ const autoprefixer = require("autoprefixer");
 const postcssNormalize = require('postcss-normalize');
 
 module.exports = {
-  syntax: 'postcss-scss',
+ // syntax: 'postcss-scss',
   plugins: [
       require('stylelint'), //console based linting
       require('postcss-reporter')({ clearReportedMessages: true }), // ?
