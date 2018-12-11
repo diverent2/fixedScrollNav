@@ -1,6 +1,5 @@
 "use strict";
 
-let webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FilterPlugin = require('filter-webpack-plugin');
