@@ -39,13 +39,21 @@ npm | `npm install`
 
 #### start
 
+change source files, adjust the demo and module behavior. 
+
 Manager | Command
 --- | ---
 yarn | `yarn start`
 npm | `npm start`
 
+#### build
 
-for further reference see [SimplePlate](https://github.com/MaximilianUE/SimplePlate)
+Manager | demo (./docs) | module (./lib)
+--- | --- | ---
+yarn | `yarn build-demo` | `yarn build-module`
+npm | `npm run build-demo` | `npm run build-module`
+
+for further reference see [⛳SimplePlate](https://github.com/MaximilianUE/SimplePlate)
 
 ## 👩‍💻 usage
 
