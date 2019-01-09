@@ -4,7 +4,9 @@ ES6 fixed scroll navigation that allows users to navigate between sections with 
 Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11)
 
-[Demo](https://maximilianue.github.io/fixedScrollNav/)
+➡️ [Demo](https://maximilianue.github.io/fixedScrollNav/) ⬅️
+
+![Demovideo](https://imgur.com/32LQQr4.gif)
 
 ## ✨ Feature List
 
