@@ -104,8 +104,8 @@ Use `title` to adjust the text that is displayed on hover
 
 #### Available Functions
 
-name | function 
---- | --- | ---
+name | function
+--- | ---
 `init` | initializes the module
 `getCurrentSection_index ` | returns an index number (starting with 0) of the currently active section
 `scrollToPreviousSection` | if available scrolls to previous (above) section
