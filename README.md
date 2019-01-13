@@ -13,6 +13,7 @@ Oh and it will work in all browsers 😉💻
 * Vanilla ES6 🍦
 * simple and intuitive usage
 * flexible (can be used everywhere)
+* supports nested containers
 * smooth scrolling automatically gets polyfilled **only if needed**
 * lightweight: ~3kb (minified version + 4kb polyfill if needed)
 * can be controlled via keyboard (A11y ready)
@@ -100,6 +101,20 @@ Use `title` to adjust the text that is displayed on hover
 (This will first test if the navigation even exist. If not, it won´t execute) 
 
 <small>*Note: for IE11 support you will also need to use [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill). </small>
+
+#### Available Functions
+
+name | function 
+--- | --- | ---
+`init` | initializes the module
+`getCurrentSection_index ` | returns an index number (starting with 0) of the currently active section
+`scrollToPreviousSection` | if available scrolls to previous (above) section
+`scrollToNextSection` | if available scrolls to next  (below) section
+
+
+You can find a listing of all functions inside **DiverentTools**:
+
+in your console `window.DiverentTools.fixedScrollNav`
 
 ### Styles
 
