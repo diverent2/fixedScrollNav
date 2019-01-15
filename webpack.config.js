@@ -71,6 +71,6 @@ module.exports = (env) => ({
       svg4everybody: true,
     }),
     new FilterPlugin({ files: ['main.bundle.js', 'main.bundle.js.map'] }),
-    new CleanWebpackPlugin(['docs']),
+ // new CleanWebpackPlugin(['docs']),
   ]
 })
