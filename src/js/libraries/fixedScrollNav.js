@@ -9,12 +9,12 @@ const fixedScrollNav = {
         let isUsed = document.querySelector('.fixedScrollNav__container');
         if (isUsed) {
 
-            detectScroll();
+            _detectScroll();
 
-            init__goToPreviousSection();
-            init__goToNextSection();
+            _init__goToPreviousSection();
+            _init__goToNextSection();
 
-            toggleButtons();
+            _toggleButtons();
         }
     }
 }
@@ -23,7 +23,7 @@ const fixedScrollNav = {
  * add eventlistener [ will run scrollToPreviousSection() ]
  * add a11y features (accessibility)
  **/
-function init__goToPreviousSection() {
+function _init__goToPreviousSection() {
 
     const scrollPreviousButton = document.querySelector('.fixedScrollNav__button--previous');
     scrollPreviousButton.tabIndex = "0";
@@ -41,17 +41,17 @@ function init__goToPreviousSection() {
 }
 
 /** 
- * add eventlisten for scrolling (manually or automatically) to toggleButtons()
+ * add eventlisten for scrolling (manually or automatically) to _toggleButtons()
  **/
-function detectScroll() { //add eventlisten
-    document.addEventListener("scroll", toggleButtons);
+function _detectScroll() { //add eventlisten
+    document.addEventListener("scroll", _toggleButtons);
 }
 
 
 /** 
  * check if first or last section are in focus and toggle buttons accordingly
  **/
-function toggleButtons() {
+function _toggleButtons() {
     
     let activeSection_index = getCurrentSection_index();
     const scrollPreviousButton = document.querySelector('.fixedScrollNav__button--previous');
@@ -85,7 +85,7 @@ function toggleButtons() {
  * add eventlistener [ will run scrollToNextSection() ]
  * add a11y features (accessibility)
  **/
-function init__goToNextSection() {
+function _init__goToNextSection() {
 
     const scrollNextButton = document.querySelector('.fixedScrollNav__button--next');
     scrollNextButton.tabIndex = "0";
