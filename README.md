@@ -96,21 +96,28 @@ Use `title` to adjust the text that is displayed on hover
 
 #### Initialize
 
-`fixedScrollNav.init();`
+`new fixedScrollNav();`
 
-(This will first test if the navigation even exist. If not, it won´t execute) 
+(This will first test if the markup for the navigation even exist. If not, it won´t initialize.) 
 
 <small>*Note: for IE11 support you will also need to use [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill). </small>
 
-#### Available Functions
+#### Available Functions/Vars
+
+give your fixedScrollNav a name like 
+
+`const awesomeNav = new fixedScrollNav();`
+
+to use these features.
 
 name | function
 --- | ---
-`init` | initializes the module
-`getCurrentSection_index ` | returns an index number (starting with 0) of the currently active section
-`scrollToPreviousSection` | if available scrolls to previous (above) section
-`scrollToNextSection` | if available scrolls to next  (below) section
+`currentSection_index` | returns an index number (starting with 0) of the currently active section
+--- | ---
+`scrollToPreviousSection()` | if available scrolls to previous (above) section
+`scrollToNextSection()` | if available scrolls to next  (below) section
 
+functions starting with an underscore (_) are meant to be private.(not be called)
 
 You can find a listing of all functions inside **DiverentTools**:
 
