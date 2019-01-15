@@ -19,10 +19,10 @@
     "email": "diverent2@gmail.com",
     "url": "https://twitter.com/diverent2"
   },
-  "homepage": "https://maximilianue.github.io/fixedScrollNav/",
-  "repository": "github:MaximilianUE/fixedScrollNav",
+  "homepage": "https://diverent2.github.io/fixedScrollNav/",
+  "repository": "github:diverent2/fixedScrollNav",
   "bugs": {
-    "url": "https://github.com/MaximilianUE/fixedScrollNav/issues",
+    "url": "https://github.com/diverent2/fixedScrollNav/issues",
     "email": "diverent2@gmail.com"
   },
   "keywords": [
@@ -34,7 +34,8 @@
     "smooth scroll",
     "ES6",
     "scroll",
-    "fixed"
+    "fixed",
+    "diverent2"
   ],
   "license": "MIT",
   "devDependencies": {

@@ -4,7 +4,7 @@ ES6 fixed scroll navigation that allows users to navigate between sections with 
 Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11*)
 
-➡️ [Demo](https://maximilianue.github.io/fixedScrollNav/) ⬅️
+➡️ [Demo](https://diverent2.github.io/fixedScrollNav/) ⬅️
 
 ![Demovideo](https://imgur.com/32LQQr4.gif)
 
@@ -27,7 +27,7 @@ npm | `npm install fixedScrollNav`
 
 ### Module Development (Contribution)
 
-clone this repository `git clone https://github.com/MaximilianUE/fixedScrollNav.git`
+clone this repository `git clone https://github.com/diverent2/fixedScrollNav.git`
 
 `cd ./fixedScrollNav`
 
@@ -54,7 +54,7 @@ Manager | demo (./docs) | module (./lib)
 yarn | `yarn build-demo` | `yarn build-module`
 npm | `npm run build-demo` | `npm run build-module`
 
-for further reference see [⛳SimplePlate](https://github.com/MaximilianUE/SimplePlate)
+for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePlate)
 
 ## 👩‍💻 usage
 
