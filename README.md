@@ -154,4 +154,4 @@ for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePl
 
 <br>
 
-made with ♥️ by [Diverent2](https://twitter.com/diverent2)
+made with ♥️ by [diverent2](https://twitter.com/diverent2)
