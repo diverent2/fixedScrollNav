@@ -10,7 +10,7 @@ Format: `[Version] - YYYY-MM-DD`
 
 > none
 
-## [1.0.0] - 2019-01-17
+## [1.0.1] - 2019-01-17
 
 ### Added
 

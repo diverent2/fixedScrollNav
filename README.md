@@ -1,5 +1,7 @@
 # ↕️ fixedScrollNav
 
+[![npm version](https://badge.fury.io/js/fixedscrollnav.svg)](https://badge.fury.io/js/fixedscrollnav)
+
 ES6 fixed scroll navigation that allows users to navigate between sections with simple and intuitive arrow buttons.
 Oh and it will work in all browsers 😉💻
 (Chrome, Safari, Edge, Firefox and IE11*)
