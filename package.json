@@ -1,6 +1,6 @@
 {
   "name": "fixedscrollnav",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "A fixed scroll navigation to jump between sections",
   "main": "js/fixedScrollNav.min.js",
   "scripts": {
