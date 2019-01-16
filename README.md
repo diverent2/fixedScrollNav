@@ -152,4 +152,6 @@ npm | `npm run build-demo` | `npm run build-module`
 
 for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePlate)
 
+<br>
+
 made with ♥️ by [Diverent2](https://twitter.com/diverent2)
