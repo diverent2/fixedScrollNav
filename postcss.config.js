@@ -10,6 +10,6 @@ module.exports = {
       require('precss'), //allows sass like structure
       require('postcss-preset-env'),
       autoprefixer({ grid: true }),
-      require('cssnano'), //minifies css
+    // require('cssnano'), //minifies css
   ]
 }
