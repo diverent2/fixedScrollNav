@@ -22,8 +22,6 @@ Oh and it will work in all browsers 😉💻
 
 Manager | Command
 --- | ---
-yarn (recommended) | `yarn add fixedScrollNav`
-npm | `npm install fixedScrollNav`
 
 ### Module Development (Contribution)
 
@@ -55,6 +53,8 @@ yarn | `yarn build-demo` | `yarn build-module`
 npm | `npm run build-demo` | `npm run build-module`
 
 for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePlate)
+yarn (recommended) | `yarn add fixedscrollnav`
+npm | `npm install fixedscrollnav`
 
 ## 👩‍💻 usage
 
