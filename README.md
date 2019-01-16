@@ -22,37 +22,6 @@ Oh and it will work in all browsers 😉💻
 
 Manager | Command
 --- | ---
-
-### Module Development (Contribution)
-
-clone this repository `git clone https://github.com/diverent2/fixedScrollNav.git`
-
-`cd ./fixedScrollNav`
-
-#### install modules
-
-Manager | Command
---- | ---
-yarn | `yarn`
-npm | `npm install`
-
-#### start
-
-change source files, adjust the demo and module behavior. 
-
-Manager | Command
---- | ---
-yarn | `yarn start`
-npm | `npm start`
-
-#### build
-
-Manager | demo (./docs) | module (./lib)
---- | --- | ---
-yarn | `yarn build-demo` | `yarn build-module`
-npm | `npm run build-demo` | `npm run build-module`
-
-for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePlate)
 yarn (recommended) | `yarn add fixedscrollnav`
 npm | `npm install fixedscrollnav`
 
@@ -149,5 +118,38 @@ feel free to adjust to your needs
    //arrow down
    .fixedScrollNav__button--next
 ```
+
+
+
+## Module Development (Contribution)
+
+clone this repository `git clone https://github.com/diverent2/fixedScrollNav.git`
+
+`cd ./fixedScrollNav`
+
+### install modules
+
+Manager | Command
+--- | ---
+yarn | `yarn`
+npm | `npm install`
+
+### start
+
+change source files, adjust the demo and module behavior. 
+
+Manager | Command
+--- | ---
+yarn | `yarn start`
+npm | `npm start`
+
+### build
+
+Manager | demo (./docs) | module (./lib)
+--- | --- | ---
+yarn | `yarn build-demo` | `yarn build-module`
+npm | `npm run build-demo` | `npm run build-module`
+
+for further reference see [⛳SimplePlate](https://github.com/diverent2/SimplePlate)
 
 made with ♥️ by [Diverent2](https://twitter.com/diverent2)
