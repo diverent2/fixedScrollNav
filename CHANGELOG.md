@@ -10,7 +10,7 @@ Format: `[Version] - YYYY-MM-DD`
 
 > none
 
-## [1.0.1] - 2019-01-17
+## [1.0.1](https://github.com/diverent2/fixedScrollNav/releases/tag/v1.0.1) - 2019-01-17
 
 ### Added
 
