@@ -4,7 +4,7 @@ about: Suggest your idea
 
 ---
 
-#💡 feature request
+# 💡 feature request
 
 ## I would really like the project to do...
 
