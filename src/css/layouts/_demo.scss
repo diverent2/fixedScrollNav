@@ -1,70 +1,66 @@
-
 .demoContainer {
-    
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-        &:nth-child(1) {
-            background: darkred;
-            height: 1000px;
-        }
-    
-        &:nth-child(2) {
-            background: #345531;
-            height: 500px;
-        }
-    
-        &:nth-child(3) {
-            background: #533246;
-            height: 1300px;
-        }
-    
-        &:nth-child(4) {
-            background: #85A078;
-            height: 600px;
-        }
-    
-        &:nth-child(5) {
-            background: #5433d2;
-            height: 100vh;
-        }
-    
-        &:nth-child(6) {
-            background: #56faad;
-            height: 500px;
-        }
-        &:nth-child(7) {
-            background: #85de32;
-            height: 10px;
-        }
-        &:nth-child(8) {
-            background: #59843a;
-            height: 320px;
-        }
-        &:nth-child(9) {
-            background: #d5d560;
-            height: 1600px;
-        }
-    }
-}
-
-.demoContainer .container--sub {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:nth-child(1) {
-        background: #9283cd;
-        height: 70vh;
+      background: darkred;
+      height: 1000px;
     }
 
     &:nth-child(2) {
-        background: #b32d7e;
-        height: 150px;
+      background: #345531;
+      height: 500px;
     }
 
     &:nth-child(3) {
-        background: #b8b8a6;
-        height: 510px;
+      background: #533246;
+      height: 1300px;
     }
+
+    &:nth-child(4) {
+      background: #85a078;
+      height: 600px;
+    }
+
+    &:nth-child(5) {
+      background: #5433d2;
+      height: 100vh;
+    }
+
+    &:nth-child(6) {
+      background: #56faad;
+      height: 500px;
+    }
+    &:nth-child(7) {
+      background: #85de32;
+      height: 10px;
+    }
+    &:nth-child(8) {
+      background: #59843a;
+      height: 320px;
+    }
+    &:nth-child(9) {
+      background: #d5d560;
+      height: 1600px;
+    }
+  }
+}
+
+.demoContainer .container--sub {
+  &:nth-child(1) {
+    background: #9283cd;
+    height: 70vh;
+  }
+
+  &:nth-child(2) {
+    background: #b32d7e;
+    height: 150px;
+  }
+
+  &:nth-child(3) {
+    background: #b8b8a6;
+    height: 510px;
+  }
 }

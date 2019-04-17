@@ -6,12 +6,12 @@
   "scripts": {
     "start": "webpack-serve ./webpack.config.js",
     "build-module": "yarn build-module-unminified && yarn build-module-min",
-    "build-module-unminified": "yarn build-module-js-unminified && yarn build-module-css-unminified",
-    "build-module-js-unminified": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.js --no-minify",
-    "build-module-css-unminified": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.css --no-minify",
-    "build-module-min": "yarn build-module-js-min && yarn build-module-css-min",
-    "build-module-js-min": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.min.js",
-    "build-module-css-min": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.min.css",
+      "build-module-unminified": "yarn build-module-js-unminified && yarn build-module-css-unminified",
+        "build-module-js-unminified": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.js --no-minify",
+        "build-module-css-unminified": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.css --no-minify",
+      "build-module-min": "yarn build-module-js-min && yarn build-module-css-min",
+        "build-module-js-min": "parcel build src/js/libraries/fixedScrollNav.js --no-source-maps -d lib/js --out-file fixedScrollNav.min.js",
+        "build-module-css-min": "parcel build src/css/bits/_fixedScrollNav.scss --no-source-maps -d lib/css --out-file fixedScrollNav.min.css",
     "build-demo": "webpack -p --mode production"
   },
   "author": {
