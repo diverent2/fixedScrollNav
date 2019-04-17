@@ -1,3 +1,2 @@
-
 /* Initialize functions */
-import './init/init_fixedScrollNav';
+import "./init/init_fixedScrollNav";

@@ -1,81 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fixedScrollNav Demo</title>
-    <script> //use polyfills only if needed
-        var modernBrowser = (
-        'assign' in Object
-        );
+    <script>
+      //use polyfills only if needed
+      var modernBrowser = "assign" in Object;
 
-        if ( !modernBrowser ) {
-        var scriptElement = document.createElement('script');
-        
+      if (!modernBrowser) {
+        var scriptElement = document.createElement("script");
+
         scriptElement.async = false;
-        scriptElement.src = 'polyfills.bundle.js';
+        scriptElement.src = "polyfills.bundle.js";
         document.head.appendChild(scriptElement);
-    }
+      }
     </script>
-     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- imports from output folder -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="fixedScrollNav__container">
-        <div class="fixedScrollNav__button fixedScrollNav__button--previous" title="go to previous section"></div>
-        <div class="fixedScrollNav__button fixedScrollNav__button--next" title="go to next section"></div>
+      <div
+        class="fixedScrollNav__button fixedScrollNav__button--previous"
+        title="go to previous section"
+      ></div>
+      <div
+        class="fixedScrollNav__button fixedScrollNav__button--next"
+        title="go to next section"
+      ></div>
     </div>
 
     <header>
-        <a class="github-button" href="https://github.com/diverent2/fixedScrollNav" data-size="large" data-show-count="true" aria-label="Star fixedScrollNav on GitHub">Star</a>
+      <a
+        class="github-button"
+        href="https://github.com/diverent2/fixedScrollNav"
+        data-size="large"
+        data-show-count="true"
+        aria-label="Star fixedScrollNav on GitHub"
+        >Star</a
+      >
     </header>
 
     <main class="demoContainer">
-        <section class="container" data-fixedScrollNav-section>
-            <h2>1</h2>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>1</h2>
+      </section>
+      <section>
+        <section class="container container--sub" data-fixedScrollNav-section>
+          <h2>2.1</h2>
         </section>
-        <section>
-            <section class="container container--sub" data-fixedScrollNav-section>
-                <h2>2.1</h2>
-            </section>
-            <section class="container container--sub" data-fixedScrollNav-section>
-                <h2>2.2</h2>
-            </section>
-            <section class="container container--sub" data-fixedScrollNav-section>
-                <h2>2.3</h2>
-            </section>
+        <section class="container container--sub" data-fixedScrollNav-section>
+          <h2>2.2</h2>
         </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>3</h2>
+        <section class="container container--sub" data-fixedScrollNav-section>
+          <h2>2.3</h2>
         </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>4</h2>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>3</h2>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>4</h2>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>5</h2>
+      </section>
+      <section>
+        <section class="container container--sub" data-fixedScrollNav-section>
+          <h2>6.1</h2>
         </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>5</h2>
+        <section class="container container--sub" data-fixedScrollNav-section>
+          <h2>6.2</h2>
         </section>
-        <section>
-            <section class="container container--sub" data-fixedScrollNav-section>
-                <h2>6.1</h2>
-            </section>
-            <section class="container container--sub" data-fixedScrollNav-section>
-                <h2>6.2</h2>
-            </section>
-        </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>7</h2>
-        </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>8</h2>
-        </section>
-        <section class="container" data-fixedScrollNav-section>
-            <h2>9</h2>
-        </section>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>7</h2>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>8</h2>
+      </section>
+      <section class="container" data-fixedScrollNav-section>
+        <h2>9</h2>
+      </section>
     </main>
 
     <!-- imports from output folder -->
     <script src="index.bundle.js"></script>
-</body>
+  </body>
 </html>
