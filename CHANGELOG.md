@@ -9,6 +9,15 @@ Format: `[Version] - YYYY-MM-DD`
 
 ## [Unreleased]
 
+### Added
+
+- prettier
+- eslint
+
+### Changed
+
+- global file-formating using prettier
+
 > none
 
 ## [1.0.1](https://github.com/diverent2/fixedScrollNav/releases/tag/v1.0.1) - 2019-01-17
