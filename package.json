@@ -60,7 +60,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.10.3",
-    "postcss": "^7.0.6",
+    "postcss": "^8.2.10",
     "postcss-loader": "^2.1.5",
     "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^5.1.0",
